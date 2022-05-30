@@ -1,0 +1,124 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 813300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "The user should be in facebook page",
+            "match": {
+              "location": "LoginSteps.the_user_should_be_in_facebook_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-30T06:50:59.128Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7442041600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "To validate the login functionality with invalid username and password",
+        "description": "",
+        "id": "to-validate-the-login-functionality-of-facebook-application;to-validate-the-login-functionality-with-invalid-username-and-password;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 621500300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 299094400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user has to fill invalid \"manoj\"and \"34567\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"manoj\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"34567\"",
+                  "offset": 40
+                }
+              ],
+              "location": "LoginSteps.the_user_has_to_fill_invalid_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 111214100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user has to click the \"login\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"login\"",
+                  "offset": 26
+                }
+              ],
+              "location": "LoginSteps.the_user_has_to_click_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1115392200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The user should navigate to the invalid login page",
+            "match": {
+              "location": "LoginSteps.the_user_should_navigate_to_the_invalid_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "To validate the login functionality of facebook application",
+    "description": "",
+    "id": "to-validate-the-login-functionality-of-facebook-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/login.feature",
+    "tags": []
+  }
+]

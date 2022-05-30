@@ -39,89 +39,89 @@ public class BaseClass {
 	
 	public static WebDriver driver;
 
-//	public static WebDriver browserLaunch(String browserName) {
-//		
-//		if (browserName.equalsIgnoreCase("chrome")) {
-//			
-//			//WebDriverManager.chromedriver().version("97").setup();
-//			WebDriverManager.chromedriver().setup();
-//			driver = new ChromeDriver();
-//			
-//		}
-//		
-//		else if (browserName.equalsIgnoreCase("firefox")) {
-//			
-//			WebDriverManager.firefoxdriver().setup();
-//			driver = new FirefoxDriver();
-//			
-//		}	
-//		
-//		else if (browserName.equalsIgnoreCase("edge")) {
-//			
-//			WebDriverManager.edgedriver().setup();
-//			driver = new EdgeDriver();
-//			
-//		}	
-//		
-//		else {
-//			
-//			System.err.println("Invalid Browser Name");
-//			
-//		}
-//		
-//		return driver;
-//		
-//	}
-	
 	public static WebDriver browserLaunch(String browserName) {
 		
-		switch (browserName) {
+		if (browserName.equalsIgnoreCase("chrome")) {
+			
+			//WebDriverManager.chromedriver().version("97").setup();
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+			
+		}
 		
-		case "Chrome" :
-			
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
-			break;
-			
-		case "chrome" :
-			
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
-			break;
-			
-		case "Firefox" :
+		else if (browserName.equalsIgnoreCase("firefox")) {
 			
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
-			break;
 			
-		case "firefox" :
-			
-			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
-			break;
-			
-		case "Edge" :
-			
-			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
-			break;
-			
-		case "edge" :
-			
-			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
-			break;
+		}	
 		
-		default :
+		else if (browserName.equalsIgnoreCase("edge")) {
+			
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+			
+		}	
+		
+		else {
 			
 			System.err.println("Invalid Browser Name");
 			
 		}
-			
+		
 		return driver;
 		
 	}
+	
+//	public static WebDriver browserLaunch(String browserName) {
+//		
+//		switch (browserName) {
+//		
+//		case "Chrome" :
+//			
+//			WebDriverManager.chromedriver().setup();
+//			driver = new ChromeDriver();
+//			break;
+//			
+//		case "chrome" :
+//			
+//			WebDriverManager.chromedriver().setup();
+//			driver = new ChromeDriver();
+//			break;
+//			
+//		case "Firefox" :
+//			
+//			WebDriverManager.firefoxdriver().setup();
+//			driver = new FirefoxDriver();
+//			break;
+//			
+//		case "firefox" :
+//			
+//			WebDriverManager.firefoxdriver().setup();
+//			driver = new FirefoxDriver();
+//			break;
+//			
+//		case "Edge" :
+//			
+//			WebDriverManager.edgedriver().setup();
+//			driver = new EdgeDriver();
+//			break;
+//			
+//		case "edge" :
+//			
+//			WebDriverManager.edgedriver().setup();
+//			driver = new EdgeDriver();
+//			break;
+//		
+//		default :
+//			
+//			System.err.println("Invalid Browser Name");
+//			
+//		}
+//			
+//		return driver;
+//		
+//	}
 	
 	public static void urlLaunch(String url) {
 		
